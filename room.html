@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Room Setup (Chrome)</title>
+<script src="furniture.js"></script>
+<script src="dormroom.js" defer></script>
+<style>
+    @import "reset.css";
+    body {
+        display: grid;
+        grid-template-columns: 260px 1fr;
+        grid-template-rows: auto;
+    }
+
+    #leftcolumn {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #dormdiv {
+        width: 200px;
+        height: 200px;
+        border: 5px solid black;
+        margin: 20px;
+    }
+
+    #dormdivbuttons {
+        margin-left: 20px;
+    }
+
+    #rightcolumn {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        padding: 20px;
+    }
+
+    p {
+        margin-bottom: 50px;
+    }
+
+    img {
+        position: absolute;
+    }
+
+</style>
+</head>
+
+<body>
+<div id="leftcolumn">
+    <div id="dormdiv">
+
+    </div>
+    <div id="dormdivbuttons">
+        <button id="cleanupb" type="button">Cleanup</button>  <button id="restartbutton" type="button">Restart</button>
+    </div>
+</div>
+
+<div id="rightcolumn">
+    <p class="furniturename" id="bedonelabel">Bed One</p>
+    <img id="imgone" src="bed.png" alt="bed"/>
+    <p class="furniturename" id="deskonelabel">Desk One</p>
+    <img id="imgtwo" src="desk.png" alt="bed" />
+    <p class="furniturename" id="bedtwolabel">Bed Two</p>
+    <img id="imgthree" src="bed.png" alt="bed" />
+    <p class="furniturename" id="desktwolabel">Desk Two</p>
+    <img id="imgfour" src="desk.png" alt="bed" />
+    <p class="furniturename" id="dresserlabel">Dresser</p>
+    <img id="imgfive" src="dresser.png" alt="bed" />
+</div>
+</body>
+
+</html>
